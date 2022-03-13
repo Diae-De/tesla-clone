@@ -1,0 +1,112 @@
+.models{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+}
+
+.carInfo{
+    position: absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    bottom: 7em;
+    margin-left: -10em;
+}
+
+.carInfo ul{
+    list-style: none;
+    margin-left: 4em;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carInfo ul li{
+    color: #fff;
+    font-size: 12px;
+}
+
+.carInfo ul li button{
+    border: 4px solid #fff;
+    padding:12px 50px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 15px;
+    transition: .3s ease;
+}
+
+.carInfo button:hover{
+    border: 4px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .carInfo{
+        margin-left: -5em;
+    }
+    .carInfo ul{
+        margin-left: 2em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .carInfo{
+        margin-left: 0em;
+    }
+    .carInfo ul{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .carInfo ul li{
+        font-size: 10px;
+    }
+    .carInfo ul li button{
+        border: 2px solid #fff;
+        padding:10px 20px;
+        font-size: 12px;
+    }
+    .carInfo button:hover{
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+}
+
+@media (max-width: 400px) {
+    .carInfo{
+        margin-left: -1em;
+    }
+    .carInfo ul{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .carInfo ul li{
+        font-size: 8px;
+    }
+    .carInfo ul li button{
+        border: 2px solid #fff;
+        padding:10px 20px;
+        font-size: 12px;
+    }
+    .carInfo button:hover{
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+}
+
+.allnew{
+    padding:20px;
+    color:white;
+    font-size:30px;
+    z-index: 1000;
+}
+
+.newIterior img{
+    z-index: 1;
+    height:130vh;
+}
